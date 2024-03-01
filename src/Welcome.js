@@ -1,6 +1,6 @@
 import React from "react";
 import classroom from './Images/classroom.png';
-// import { Link } from "react-router-dom";
+ import { Link } from "react-router-dom";
 import "./Events.js";
 import "./welcome.css";
 import "./Welcome.js";
@@ -13,9 +13,9 @@ function Welcome() {
      <input type="checkbox" id="check"></input>
      <label for="check" className="hamburger">&#9776;</label>
      <div className="menu">
-         <li><a  href ="/Events">Events</a> </li>
-         <li><a  href ="/Portal">Portal</a></li>
-         <li><a href ="/search" >Search</a></li>
+         <li><Link to ="/Events">Events</Link> </li>
+         <li><Link to ="/Portal">Portal</Link></li>
+         <li><Link to ="/search" >Search</Link></li>
          <li><a href ="/">logout  <i class="fa-solid fa-right-from-bracket"></i></a></li>
          </div>
    </ul>
